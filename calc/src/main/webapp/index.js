@@ -5,9 +5,18 @@ $(function() {
 function somar(event) {
 	event.preventDefault();
 	
-    var a = $("#a").val();
-    var b = $("#b").val();
-    var result = parseInt(a) + parseInt(b);
- 
-    $("#result").val(result);
+	var data = {
+            a : $("#a").val(),
+            b : $("#b").val()
+    }
+    
+   Calculator.sum(data).done(sumOK);
 };
+
+function sumOK(data){
+	$("#result").val(data);
+}
+
+
+
+
