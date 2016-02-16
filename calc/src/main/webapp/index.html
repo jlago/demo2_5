@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+	    .required {
+	        border-color: red;
+	    }
+    </style>
 </head>
 <body>
 
 <form>
-<input id="a" type="number">
-+
-<input id="b" type="number">
-=
-<input id="result" type="number" readonly="readonly">
-<button id="sum" type="submit">Somar</button>
-</form>
-
-	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="calculator.js"></script>
-    <script src="index.js"></script>
-</body>
+	<input id="a" type="number">
+	<span id="a-message"></span>
+	+
+	<input id="b" type="number">
+	<span id="b-message"></span>
+	=
+	<input id="result" type="number" readonly="readonly">
+	<button id="sum" type="submit">Somar</button>
+	</form>
+	
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="calculator.js"></script>
+	    <script src="index.js"></script>
+	</body>
 </html>
